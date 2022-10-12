@@ -1,0 +1,149 @@
+/* global view */
+body{
+    font-family: 'Asap', sans-serif;
+    background-color: #EBEBEB ;
+}
+
+.header-container{
+    background-color: grey;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+header{
+    max-width :1024px;
+    /* background-color: aqua; */
+    min-height: 100px;
+    margin:0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.button{
+margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+
+}
+.container {
+   
+    min-height: 500px;
+    max-width :1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+   
+}
+.col {
+    /* background-color: blanchedalmond;
+    min-height: 200px; */
+    background-color: rgb(68, 190, 115);
+    width: 30%;
+    margin-bottom: 40px;
+
+   
+}
+.col p{
+    color: white;
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.23rem;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+
+ .col p::first-line{
+    font-weight: bold;
+}
+
+.mobile-wrapp{
+    display: none;
+}
+
+
+/* TABLET VIEW */
+@media (max-width : 768px){
+.col{
+    width: 45%;
+}
+.hide-desktop-only {
+    display: block;
+}
+
+.header-container{
+    position:relative;
+}
+.container {
+
+    padding-top: 40px;
+   
+}
+nav
+{
+display: none;
+}
+nav a{
+    
+    display: block;
+    
+ } 
+.logo {
+    padding: 40px 0;
+}
+.button{
+    margin-left: 0;
+}
+.mobile-wrapp{
+    display: block;
+  padding-right: 50px;
+    
+}
+.mob-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+   
+}
+.button{
+    display: block;
+    background-color: aquamarine;
+    padding: 15px 30px;
+    margin-left: -60px;
+}
+}
+
+/* mobile view */
+
+@media(max-width : 400px){
+
+    .col{
+        width: 100%;
+    }
+    .hide-mobile-only {
+        display: none;
+    }
+    img {
+        width: 100% ;
+    }
+  
+}
