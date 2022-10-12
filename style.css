@@ -91,11 +91,12 @@ margin-left: 10px;
 }
 
 .header-container{
-    position:relative;
+    position:fixed;
 }
 .container {
 
-    padding-top: 40px;
+    padding-top: 120px;
+   
    
 }
 nav
@@ -108,7 +109,7 @@ nav a{
     
  } 
 .logo {
-    padding: 40px 0;
+    padding: 40px 10px;
 }
 .button{
     margin-left: 0;
